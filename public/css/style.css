@@ -1,5 +1,10 @@
 .search_more {
-    margin-top: 2 !important;
+    /* margin-top: 2 !important; */
+    margin-top: 3px;
+}
+
+.form-control {
+    box-shadow: none !important;
 }
 
 .search_more:hover {
@@ -14,6 +19,10 @@
 
 .project-info {
     letter-spacing: 2px;
+}
+
+.myform {
+    padding: 2px;
 }
 
 .card-header {

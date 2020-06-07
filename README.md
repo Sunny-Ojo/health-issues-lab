@@ -4,7 +4,7 @@ Health Lab is a simple web application that returns the description, medical con
 
 ## For Example
 
-Selecting HIV in the health issues result, returns the above listed headings for HIV.
+Selecting HIV in the health issues search form, returns the above listed headings for HIV.
 
 ## Cloning this simple web app
 

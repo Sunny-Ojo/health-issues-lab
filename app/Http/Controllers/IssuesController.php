@@ -24,6 +24,8 @@ class IssuesController extends Controller
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => array(
                 "x-rapidapi-host: priaid-symptom-checker-v1.p.rapidapi.com",
+                // my api key is saved into the .env file, get yours from https://rapidapi.com/priaid/api/symptom-checker
+
                 "x-rapidapi-key: " . env('RAPID_API_KEY'),
             ),
         ));
@@ -61,7 +63,8 @@ class IssuesController extends Controller
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => array(
                 "x-rapidapi-host: priaid-symptom-checker-v1.p.rapidapi.com",
-                "x-rapidapi-key: " . env('RAPID_API_KEY'),
+                // my api key is saved into the .env file, get yours from https://rapidapi.com/priaid/api/symptom-checker
+                 "x-rapidapi-key: " . env('RAPID_API_KEY'),
             ),
         ));
 
@@ -80,6 +83,8 @@ class IssuesController extends Controller
     }
     public function contact(ContactRequest $request)
     {
+        // right here i am using ContactRequest because i created a request with artisan  command, and that is where the validation rules are
+        // so i have saved it in a variable called contact
         $contact = $request->validated();
         $to = 'njokusunnyojo@gmail.com';
         $email = $request->email;
@@ -95,7 +100,7 @@ class IssuesController extends Controller
         $txt = wordwrap($txt, 70);
 
         $send = mail($email, $subject, $txt, $headers);
-
+        // so here, if the mail function doesnt work, i will save it to the database, i wouldnt like to show error msgs to users except if the error isnt from our end
         if ($send) {
             $request->session()->flash('success', 'Thank you contacting us, your message was sent successful.');
             return redirect('/me');

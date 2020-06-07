@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Health Lab | Welcome</title>
+<title>Search results for {{$data['Name']}}</title>
   <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
   <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
@@ -231,7 +231,7 @@
           </div>
           <div class="col-md-4 col-sm-4 marb20">
             <div class="ftr-tle">
-              <h4 class="white no-padding">Follow us</h4>
+              <h4 class="white no-padding">Follow us on</h4>
             </div>
             <div class="info-sec">
               <ul class="social-icon">

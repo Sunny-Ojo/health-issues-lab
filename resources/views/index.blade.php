@@ -72,7 +72,7 @@
   <!--cta-->
   <section id="issues" class="section-padding">
     <div class="container">
-   <div class="row  " >
+   <div class="row justify-content-center" >
        <div class="col-md-8"style="margin:0, auto;">
            <div class="card">
                <div class="card-header">Search for a health issue</div>
@@ -232,7 +232,7 @@
           </div>
           <div class="col-md-4 col-sm-4 marb20">
             <div class="ftr-tle">
-              <h4 class="white no-padding">Follow us</h4>
+              <h4 class="white no-padding">Follow us on</h4>
             </div>
             <div class="info-sec">
               <ul class="social-icon">

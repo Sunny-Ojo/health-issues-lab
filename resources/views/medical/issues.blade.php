@@ -240,7 +240,7 @@
           </div>
           <div class="col-md-4 col-sm-4 marb20">
             <div class="ftr-tle">
-              <h4 class="white no-padding">Follow us</h4>
+              <h4 class="white no-padding">Follow us on</h4>
             </div>
             <div class="info-sec">
               <ul class="social-icon">
