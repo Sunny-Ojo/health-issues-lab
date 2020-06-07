@@ -114,7 +114,7 @@
           <div style="visibility: visible;" class="col-sm-9 more-features-box">
             <div class="more-features-box-text">
               <div class="more-features-box-text-description">
-                <h2>Why You Should Be Concerned About  Health Issues</h2>
+                <p>Why You Should Be Concerned About  Health Issues</p>
               </div>
             </div>
             <div class="more-features-box-text">
