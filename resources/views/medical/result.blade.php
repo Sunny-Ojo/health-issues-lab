@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Medical Result for {{$data['Name']}}</title>
+  <title>Health Lab | Welcome</title>
   <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
   <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
@@ -52,7 +52,7 @@
                <h1 style="color: red">Health Lab</h1>
             </div>
             <div class="banner-text text-center">
-              <h1 class="white">Healthcare at your desk!!</h1>
+              <h1 class="white project-info">Health Lab at your desk!</h1>
               <p>We Help People know,  <br>and become aware of several Health Medical Issues.</p>
               <a href="#issues" class="btn btn-appoint">Get Started.</a>
             </div>
@@ -65,6 +65,9 @@
     </div>
   </section>
   <!--/ banner-->
+  <!--service-->
+
+
 
   <!--cta-->
   <section id="cta-1" class="section-padding">
@@ -87,8 +90,6 @@
     </div>
   </section>
 
-
-
   <!--about-->
   <section id="about" class="section-padding">
     <div class="container">
@@ -102,6 +103,11 @@
         </div>
         <div class="col-md-9 col-sm-8 col-xs-12">
           <div style="visibility: visible;" class="col-sm-9 more-features-box">
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-description">
+                <p>Why You Should Be Concerned About  Health Issues</p>
+              </div>
+            </div>
             <div class="more-features-box-text">
               <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
               <div class="more-features-box-text-description">
@@ -163,22 +169,23 @@
             <div class="space"></div>
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="{{route('contact.form')}}" method="post" role="form" class="contactForm">
-              <div class="form-group">
+            <form action="{{route('contact.form')}}" method="post" role="form" class=>
+              @csrf
+                <div class="form-group">
                 <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
+                @error('name') <li class="text-danger">{{$message}}</li>@enderror
               </div>
               <div class="form-group">
                 <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
+                @error('email') <li class="text-danger">{{$message}}</li>@enderror
               </div>
               <div class="form-group">
                 <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
+                @error('subject') <li class="text-danger">{{$message}}</li>@enderror
               </div>
               <div class="form-group">
                 <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
+                @error('message') <li class="text-danger">{{$message}}</li>@enderror
               </div>
 
               <div class="form-action">
@@ -213,6 +220,7 @@
             <div class="ftr-tle">
               <h4 class="white no-padding">Quick Links</h4>
             </div>
+
             <div class="info-sec">
               <ul class="quick-info">
                 <li><a href="#banner"><i class="fa fa-circle"></i>Home</a></li>
