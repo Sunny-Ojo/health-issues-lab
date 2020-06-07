@@ -1,0 +1,21 @@
+.search_more {
+    margin-top: 2 !important;
+}
+
+.search_more:hover {
+    width: 90px;
+    background-color: blue;
+    transition: ease-in-out 0.3s;
+}
+
+#issues {
+    background-color: blanchedalmond;
+}
+
+.project-info {
+    letter-spacing: 2px;
+}
+
+.card-header {
+    color: black;
+}
