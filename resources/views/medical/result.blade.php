@@ -204,69 +204,31 @@
 
               <!--footer-->
               <footer id="footer">
-                <div class="top-footer">
+
+                <div class="footer-line">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-4 col-sm-4 marb20">
-                        <div class="ftr-tle">
-                          <h4 class="white no-padding">About Us</h4>
+                      <div class="col-md-12 text-center">
+
+                          <br>
+                           © Copyright SunshineCoder - {{ date('Y') }}. All Rights Reserved.
+                        <div class="credits">
+
+                          Template by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
                         </div>
-                        <div class="info-sec">
-                          <p>We Help People know, and become aware of several Health Medical Issues.</p>
-                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              <!--/ footer-->
 
-          </div>
-          <div class="col-md-4 col-sm-4 marb20">
-            <div class="ftr-tle">
-              <h4 class="white no-padding">Quick Links</h4>
-            </div>
+              <script src="{{asset('js1/jquery.min.js')}}"></script>
+              <script src="{{asset('js1/jquery.easing.min.js')}}"></script>
+              <script src="{{asset('js1/bootstrap.min.js')}}"></script>
+              <script src="{{asset('js1/custom.js')}}"></script>
+              <script src="{{asset('contactform/contactform.js')}}"></script>
 
-            <div class="info-sec">
-              <ul class="quick-info">
-                <li><a href="#banner"><i class="fa fa-circle"></i>Home</a></li>
-                <li><a href="#issues"><i class="fa fa-circle"></i>Health Issues</a></li>
-                <li><a href="#contact"><i class="fa fa-circle"></i>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 marb20">
-            <div class="ftr-tle">
-              <h4 class="white no-padding">Follow us on</h4>
-            </div>
-            <div class="info-sec">
-              <ul class="social-icon">
-                <li class="bglight-blue"><a href="https://web.facebook.com/SunnyOjoNjoku" target="blank"><i class="fa fa-facebook"></i></a></li>
-                 <li class="bgdark-blue"><a href="https://www.linkedin.com/in/sunny-ojo-7635221aa/" target="blank"><i class="fa fa-linkedin"></i></a></li>
-               <li class="bglight-blue"><a href="https://twitter.com/SunnyOjo4" target="blank"><i class="fa fa-twitter"></i></a> </li>
-                <li class="bgred"><a href="https://www.instagram.com/ojoskid_sunny/" target="blank"><i class="fa fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-line">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            © Copyright SunshineCoder - {{ date('Y') }}. All Rights Reserved.
-            <div class="credits">
+            </body>
 
-              Template by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--/ footer-->
-
-  <script src="{{asset('js1/jquery.min.js')}}"></script>
-  <script src="{{asset('js1/jquery.easing.min.js')}}"></script>
-  <script src="{{asset('js1/bootstrap.min.js')}}"></script>
-  <script src="{{asset('js1/custom.js')}}"></script>
-  <script src="{{asset('contactform/contactform.js')}}"></script>
-
-</body>
-
-</html>
+            </html>

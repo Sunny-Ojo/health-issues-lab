@@ -7,11 +7,7 @@
     box-shadow: none !important;
 }
 
-.search_more:hover {
-    width: 90px;
-    background-color: blue;
-    transition: ease-in-out 0.3s;
-}
+
 
 #issues {
     background-color: blanchedalmond;

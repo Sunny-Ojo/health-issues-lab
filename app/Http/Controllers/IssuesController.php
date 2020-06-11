@@ -79,6 +79,7 @@ class IssuesController extends Controller
             $data = json_decode($response, true);
 
         }
+
         return view('medical.result')->with('data', $data);
     }
     public function contact(ContactRequest $request)

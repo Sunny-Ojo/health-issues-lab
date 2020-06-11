@@ -146,7 +146,7 @@ banner
 .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
     text-transform: uppercase;
-    background-color: rgba(12, 184, 182, 0.21);
+    background-color: red;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -553,7 +553,7 @@ footer
 }
 
 .social-icon li {
-    float: left;
+    float: right;
     width: 30px;
     height: 30px;
     padding-top: 5px;
