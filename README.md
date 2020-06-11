@@ -8,7 +8,7 @@ Selecting HIV in the health issues search form, returns the above listed heading
 
 ## Cloning this simple web app
 
-It is really easy to use, all you have to do is to clone it into your www folder. open it in your favorite text editor and create your (.env) file. you can simply copy and the .env.example file and configure it. Create your own database and replace it with the default database.
+It is really easy to use, all you have to do is to clone it into your www folder. open it in your favorite text editor and create your (.env) file. you can simply copy and the .env.example file and configure it. Create your own database and replace it in the .env file .
 
 ## Before it can work
 
@@ -18,5 +18,5 @@ try running composer install as well and everything should work.
 
 # Author
 
-Sunny Ojo
-[Myportfolio](https://sunnyojo.herokuapp.com)
+Sunny Ojo,
+[link to My portfolio](https://sunnyojo.herokuapp.com)
